@@ -6,4 +6,6 @@ latex:
 	jupyter-book build --builder=pdflatex fem/fem
 	cp fem/fem/_build/latex/book.pdf ./mnpde.pdf
 	xdg-open mnpde.pdf
+clean:
+	jupyter-book clean fem/fem
 
